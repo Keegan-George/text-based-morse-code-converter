@@ -1,3 +1,9 @@
+"""
+A text-based Morse code converter that prompts the user to enter a phrase and then returns a new string in 
+Morse, as per the International Morse code.
+"""
+
+
 from morse_code import morse_code_map
 
 user_input = input("Enter the phrase to be encoded in Morse Code:").upper().split()
