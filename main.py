@@ -1,11 +1,12 @@
 from morse_code import morse_code_map
 
-user_input = input("Enter the phrase to be encoded in Morse code:").upper()
+user_input = input("Enter the phrase to be encoded in Morse Code:").upper().split()
 
-encrypted = [
-    morse_code_map.get(character, character)
-    for word in user_input
-    for character in word
-]
+morse_encrypted = "       ".join(
+    [
+        " ".join([morse_code_map.get(character, "") for character in word])
+        for word in user_input
+    ]
+)
 
-print(f"Your converted phrase in morse code is: {''.join(encrypted)}")
+print(f"Your converted phrase in Morse Code is: {morse_encrypted}")
