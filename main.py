@@ -1,12 +1,13 @@
 """
-A text-based Morse code converter that prompts the user to enter a phrase and then returns a new string in 
-Morse, as per the International Morse code.
+A text-based Morse code converter that prompts the user to enter a phrase and then returns a new string, encoded in
+Morse, as per the International Morse Code.
 """
 
-from morse_code import morse_code_map
+from morse_code_map import morse_code_map
 
 
 def morse_encoder(phrase: str) -> str:
+    """Take a string and return its Morse Code equivalent"""
     return "       ".join(
         [
             " ".join([morse_code_map.get(character, "") for character in word])
