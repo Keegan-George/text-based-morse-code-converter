@@ -1,6 +1,6 @@
 """
-A text-based Morse code converter that prompts the user to enter a phrase and then returns a new string, encoded in
-Morse, as per the International Morse Code.
+A text-based Morse code converter that prompts the user to enter a phrase and then returns a new string, Morses encoded, 
+as per the International Morse Code.
 """
 
 from morse_code_map import morse_code_map
