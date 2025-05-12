@@ -16,6 +16,6 @@ def morse_encoder(phrase: str) -> str:
     )
 
 
-user_input = input("Enter the phrase to be encoded in Morse Code:").upper().split()
+user_input = input("Enter the phrase to be encoded in Morse Code: ").upper().split()
 
 print(f"Your converted phrase in Morse Code is: {morse_encoder(user_input)}")
